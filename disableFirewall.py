@@ -5,12 +5,14 @@ HOST = "192.168.96.1"
 tn = telnetlib.Telnet(HOST)
 
 tn.read_until(b"Password: ")
+#to be modified
 tn.write(b"5\n")
 
 tn.read_until(b"RouterA")
 tn.write(b"enable\n")
 
 tn.read_until(b"Password: ")
+#to be modified
 tn.write(b"5\n")
 
 tn.read_until(b"RouterA#")
